@@ -9,7 +9,7 @@ const profile = require("../images/Profile.jpg");
 
 const Home = () => {
   const profileText = `My Name is Lucas and I am a full-stack Software Developer. 
-    I specialize in font-end development with a focus on React and TypeScript`;
+    I specialize in front-end development with a focus on React and TypeScript`;
   return (
     <Container className="home-container">
       <Row className="profile-row">
