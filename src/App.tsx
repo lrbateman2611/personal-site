@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router';
+import Age from './features/Age';
+import Home from './features/Home';
+import Layout from './features/Layout';
+import ArchiveBot from './features/ArchiveBot';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='age' element={<Age />} />
+        <Route path='archive-bot' element={<ArchiveBot />} />
+      </Route>
+    </Routes>
   );
 }
 

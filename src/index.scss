@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap";
+
+$navbar-background: rgba(0, 0, 0, 0.5) !important;
+$navbar-border-color: rgba(120, 120, 120, 0.25);
+
+body,
+html {
+  height: 100%;
+  background-color: black;
+}
+
+.navbar {
+  background-color: $navbar-background;
+  border-bottom: 1px solid $navbar-border-color;
+}
+
+// Custom Classes:
+
+.home-container {
+  padding-top: 50px;
+  .profile-picture {
+    max-height: 250px;
+    border-radius: 50%;
+  }
+  .row {
+    padding: 24px;
+    align-items: center;
+  }
+  .col {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .profile-row {
+    justify-content: space-evenly;
+  }
+  .technologies {
+    padding: 24px;
+    img {
+      max-height: 150px;
+      max-width: 200px;
+    }
+    .typescript-logo {
+      height: 75px;
+    }
+    .react-logo {
+      height: 100px;
+    }
+    .yarn-logo {
+      height: 75px;
+    }
+    .bun-logo {
+      height: 75px;
+    }
+    .dotnet-logo {
+      height: 75px;
+    }
+  }
+}
