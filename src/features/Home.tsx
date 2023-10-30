@@ -58,6 +58,11 @@ const Home = () => {
       </Row>
       <Row className="technologies">
         <img src={DotnetLogo} alt="Dotnet Logo" className="dotnet-logo" />
+        <img
+          src="https://redux.js.org/img/redux.svg"
+          alt="Redux Logo"
+          className="redux-logo"
+        />
       </Row>
     </Container>
   );
